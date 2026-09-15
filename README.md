@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# QR Code Generator
+
+A simple, modern QR code generator built with love by the team at [**Sauki Sub LTD**](https://saukisub.com). Create QR codes quickly and conveniently with a polished Next.js experience.
+
+## Features
+
+- Generate QR codes from text, URLs, and other content
+- Fast, responsive interface
+- Easy to use on desktop and mobile devices
+- Deployed and hosted on [Vercel](https://vercel.com)
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org) — React framework for the web
+- React
+- JavaScript
+- [Vercel](https://vercel.com) — hosting and deployment
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18 or later
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+Clone the repository and install its dependencies:
+
+```bash
+npm install
+```
+
+### Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Alternatively, use `yarn dev`, `pnpm dev`, or `bun dev`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Open [http://localhost:3000](http://localhost:3000) in your browser to use the app.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Build for Production
 
-## Learn More
+```bash
+npm run build
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The app is hosted on Vercel. To deploy your own version, import the repository into [Vercel](https://vercel.com/new) and follow the setup instructions. Vercel automatically detects the Next.js configuration.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+```text
+app/          # Application routes and pages
+public/       # Static assets
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions, suggestions, and improvements are welcome. Please open an issue or submit a pull request.
+
+## About Sauki Sub LTD
+
+[SAUKI SUB](https://saukisub.com) is Nigeria’s smartest way to stay connected and in control of your everyday payments. With a sleek, secure, and easy-to-use platform, you can buy mobile data, recharge airtime, and pay bills in seconds — anytime, anywhere. Whether you’re topping up for yourself or sending airtime to loved ones, SAUKI SUB ensures instant transactions with transparent pricing and reliable service. From electricity and cable TV to internet subscriptions, all your essential bills are just a tap away. Built for speed, simplicity, and trust, SAUKI SUB takes the hassle out of payments so you can focus on what matters most.
+
+Built with care by the team at [**Sauki Sub LTD**](https://saukisub.com).
+
+## License
+
+This project is maintained by Sauki Sub LTD.
