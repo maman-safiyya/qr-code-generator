@@ -64,12 +64,13 @@ export default function QRCodePage() {
   return (
     <main className="qr-page">
       <section className="hero">
+        <img className="site-logo" src="/logo.png" alt="Sauki Sub LTD logo" />
         <div className="eyebrow">
           <span>✦</span> SIMPLE. BEAUTIFUL. YOURS.
         </div>
         <h1>
           Turn anything into a<br />
-          <em>beautiful</em> QR code.
+          <em>beautiful</em> QR code for free.
         </h1>
         <p className="subtitle">
           Create, customize, and share your QR code in seconds.
@@ -158,17 +159,34 @@ export default function QRCodePage() {
         </div>
       </section>
       <footer className="site-footer">
-        <p>© {new Date().getFullYear()} Sauki Sub LTD</p>
-        <p>Built with love 💙, by the team at Sauki Sub LTD.</p>
+        <p>
+          © {new Date().getFullYear()}{" "}
+          <a
+            href="https://saukisub.com"
+            target={"_blank"}
+            style={{ color: primaryColor }}
+          >
+            Sauki Sub LTD
+          </a>
+        </p>
+        <p>
+          Built with love 💙, by the team at{" "}
+          <a
+            href="https://saukisub.com"
+            target={"_blank"}
+            style={{ color: primaryColor }}
+          >
+            Sauki Sub LTD
+          </a>
+          .
+        </p>
       </footer>
       <style jsx>{`
-        @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,600&display=swap");
         * {
           box-sizing: border-box;
         }
         .qr-page {
           min-height: 100vh;
-          background: #f7f7f4;
           color: #172018;
           font-family: "DM Sans", sans-serif;
           padding: 70px 24px 90px;
@@ -189,6 +207,13 @@ export default function QRCodePage() {
         }
         .hero {
           text-align: center;
+        }
+        .site-logo {
+          display: block;
+          width: 250px;
+          height: 72px;
+          object-fit: contain;
+          margin: 0 auto 24px;
         }
         .eyebrow {
           font-size: 11px;

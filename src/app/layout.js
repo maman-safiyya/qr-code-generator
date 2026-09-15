@@ -1,25 +1,30 @@
-import { Geist, Geist_Mono } from "next/font/google";
-//import "./globals.css";
+import { DM_Sans, DM_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
+  weight: ["300", "400", "500"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const dmMono = DM_Mono({
+  variable: "--font-dm-mono",
   subsets: ["latin"],
+  weight: ["300", "400", "500"],
 });
 
 export const metadata = {
   title: "SAUKI QR CODE GENERATOR | Home",
-  description: "Built with love by team at SAUKI SUB LTD",
+  description:
+    "Generate  QR-code for free! Built with love by team at SAUKI SUB LTD",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${dmSans.variable} ${dmMono.variable}`}>
       <body>{children}</body>
+      <Analytics />
     </html>
   );
 }
