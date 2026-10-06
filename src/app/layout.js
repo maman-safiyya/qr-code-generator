@@ -1,6 +1,6 @@
 import { DM_Sans, DM_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
-import "./globals.css";
+//import "./globals.css";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
